@@ -3,21 +3,21 @@
 
 ## Linux
 
-- [ballerina-{{ version }}-swan-lake-linux-x64.deb](https://github.com/Miranlfk/ballerina-distribution/releases/download/v{{ version }}/ballerina-{{ version }}-swan-lake-linux-x64.deb)
+- [ballerina-{{ version }}-swan-lake-linux-x64.deb](https://github.com/ballerina-platform/ballerina-distribution/releases/download/v{{ version }}/ballerina-{{ version }}-swan-lake-linux-x64.deb)
 
-- [ballerina-{{ version }}-swan-lake-linux-x64.rpm](https://github.com/Miranlfk/ballerina-distribution/releases/download/v{{ version }}/ballerina-{{ version }}-swan-lake-linux-x64.rpm)
+- [ballerina-{{ version }}-swan-lake-linux-x64.rpm](https://github.com/ballerina-platform/ballerina-distribution/releases/download/v{{ version }}/ballerina-{{ version }}-swan-lake-linux-x64.rpm)
 
 
 ## MacOS
 
-- [ballerina-{{ version }}-swan-lake-macos-x64.pkg](https://github.com/Miranlfk/ballerina-distribution/releases/download/v{{ version }}/ballerina-{{ version }}-swan-lake-macos-x64.pkg)
+- [ballerina-{{ version }}-swan-lake-macos-x64.pkg](https://github.com/ballerina-platform/ballerina-distribution/releases/download/v{{ version }}/ballerina-{{ version }}-swan-lake-macos-x64.pkg)
 
-- [ballerina-{{ version }}-swan-lake-macos-arm-x64.pkg](https://github.com/Miranlfk/ballerina-distribution/releases/download/v{{ version }}/ballerina-{{ version }}-swan-lake-macos-arm-x64.pkg)
+- [ballerina-{{ version }}-swan-lake-macos-arm-x64.pkg](https://github.com/ballerina-platform/ballerina-distribution/releases/download/v{{ version }}/ballerina-{{ version }}-swan-lake-macos-arm-x64.pkg)
 
 
 ## Windows
 
-- [ballerina-{{ version }}-swan-lake-windows-x64.msi](https://github.com/Miranlfk/ballerina-distribution/releases/download/v{{ version }}/ballerina-{{ version }}-swan-lake-windows-x64.msi)
+- [ballerina-{{ version }}-swan-lake-windows-x64.msi](https://github.com/ballerina-platform/ballerina-distribution/releases/download/v{{ version }}/ballerina-{{ version }}-swan-lake-windows-x64.msi)
 
 
 For more builds across platforms and architectures see the `Assets` section below.
@@ -32,7 +32,7 @@ For more builds across platforms and architectures see the `Assets` section belo
 Below is an example of using `cosign cli` to verify the release artifact:
 
 ```
-cosign verify-blob ballerina-{{ version }}-swan-lake-linux-x64.deb  --certificate ballerina-{{ version }}-swan-lake-linux-x64.deb.pem --signature ballerina-{{ version }}-swan-lake-linux-x64.deb.sig --certificate-identity=https://github.com/Miranlfk/ballerina-distribution/.github/workflows/publish-release.yml@refs/heads/master --certificate-oidc-issuer=https://token.actions.githubusercontent.com
+cosign verify-blob ballerina-{{ version }}-swan-lake-linux-x64.deb  --certificate ballerina-{{ version }}-swan-lake-linux-x64.deb.pem --signature ballerina-{{ version }}-swan-lake-linux-x64.deb.sig --certificate-identity=https://github.com/ballerina-platform/ballerina-distribution/.github/workflows/publish-release.yml@refs/heads/master --certificate-oidc-issuer=https://token.actions.githubusercontent.com
 ```
 
 ### Verification using Rekor API
